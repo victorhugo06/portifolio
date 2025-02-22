@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio de Victor Hugo</title>
+    <title>Portfólio de Victor Serejo</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -24,7 +24,7 @@
           <span class="bar"></span>
         </button>
         <ul class="nav-links">
-          <li><a href="#quem-sou">Quem Sou</a></li>
+          <li><a href="#quem-sou">Quem sou</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
           <li><a href="#tecnologias">Tecnologias</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -40,7 +40,7 @@
           class="profile-pic"
         />
         <div class="quem-sou-text">
-          <h1>Quem Sou</h1>
+          <h1>Quem sou</h1>
           <p>
             Sou Victor Serejo, um desenvolvedor de software apaixonado por criar
             soluções inovadoras e eficientes. Com mais de 4 anos de experiência,
@@ -230,7 +230,7 @@
             title="PHP"
           />
           <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+            src="https://www.logo.wine/a/logo/Laravel/Laravel-Logo.wine.svg"
             alt="Laravel"
             title="Laravel"
           />
@@ -282,12 +282,12 @@
         <h2>APIs e Ferramentas</h2>
         <div class="tech-icons">
           <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+            src="https://www.svgrepo.com/show/303231/docker-logo.svg"
             alt="Docker"
             title="Docker"
           />
           <img
-            src="https://raw.githubusercontent.com/detain/svg-logos/master/svg/api.svg"
+            src="https://www.gartner.com/pi/vendorimages/postman_full-life-cycle-api-management_1633960356020.png"
             alt="Postman"
             title="Postman"
           />
@@ -301,7 +301,7 @@
       </div>
 
       <div class="tech-section">
-        <h2>Version Control</h2>
+        <h2>Versionamento de código</h2>
         <div class="tech-icons">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
@@ -317,12 +317,23 @@
       </div>
 
       <div class="tech-section">
-        <h2>Testing</h2>
-        <p>Unit testing (Jest e PhpUnit), TDD (Test-Driven Development)</p>
+        <h2>Testes</h2>
+        <div class="tech-icons">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/PHPUnit_Logo.svg/2560px-PHPUnit_Logo.svg.png"
+            alt="Php unit"
+            title="Php unit"
+          />
+          <img
+            src="https://www.svgrepo.com/show/353930/jest.svg"
+            alt="Jest"
+            title="Jest"
+          />
+        </div>
       </div>
 
       <div class="tech-section">
-        <h2>Architectures</h2>
+        <h2>Arquiteturas</h2>
         <p>
           MVC (Model-View-Controller), TDD (Test-Driven Development), DDD
           (Domain-Driven Design)
@@ -330,13 +341,20 @@
       </div>
 
       <div class="tech-section">
-        <h2>Agile Methodologies</h2>
+        <h2>Metodologias Ágeis</h2>
         <p>Scrum e Kanban</p>
       </div>
 
       <div class="tech-section">
         <h2>ORM</h2>
-        <p>Prisma</p>
+        <div class="tech-icons">
+          <img
+            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1641570181924/CuC_QKFxb.png
+            "
+            alt="Prisma"
+            title="Prisma"
+          />
+        </div>
       </div>
     </section>
 
@@ -614,6 +632,7 @@
     background-color: #2c2c2cb5; /* Cinza azulado mais claro */
     border-radius: 10px;
     overflow: hidden;
+    max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
   }
@@ -624,8 +643,8 @@
 
   .portfolio-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 250px;
+    object-fit: contain;
   }
 
   .portfolio-card h3 {
@@ -646,14 +665,14 @@
   }
 
   .portfolio-card .project-link {
-    display: block;
     padding: 10px 15px;
     background-color: #0cba1b; /* Roxo mais claro */
     color: #fff;
     text-decoration: none;
     text-align: center;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
+    max-width: 120px;
   }
 
   .portfolio-card .project-link:hover {
