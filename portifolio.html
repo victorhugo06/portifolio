@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Victor Hugo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-title">Victor Serejo - Desenvolvedor Web</div>
+        <ul>
+          <li><a href="#quem-sou">Quem Sou</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="quem-sou" class="main-section" data-aos="fade-right">
+      <div class="quem-sou-content">
+        <img
+          src="https://media.licdn.com/dms/image/v2/C4D03AQElYMM3LGVKqg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597708697540?e=1745452800&v=beta&t=n6GdX8z4psUyv6_ge04dkbeEQl23UTAUMT0ULaPQzbg"
+          alt="Victor Hugo Serejo Ferreira"
+          class="profile-pic"
+        />
+        <div class="quem-sou-text">
+          <h1>Quem Sou</h1>
+          <p>
+            Sou Victor Serejo, um desenvolvedor de software apaixonado por criar
+            soluções inovadoras e eficientes. Com mais de 4 anos de experiência,
+            possuo bacharelado em Ciência da Computação pelo CESUPA e
+            especialização em Desenvolvimento Full-Stack pela PUC-RS.
+          </p>
+          <p>
+            Minha expertise abrange diversos setores, incluindo automotivo,
+            educação, saúde e advocacia, onde desenvolvo soluções seguras,
+            robustas, de fácil manutenção e escalabilidade, sempre alinhadas às
+            necessidades do projeto.
+          </p>
+          <p>
+            Desde a otimização de processos em áreas como finanças, recursos
+            humanos, fiscal e vendas, até o desenvolvimento de RPAs e a
+            construção de agentes de IA, meu foco é entregar valor e superar
+            expectativas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr
+      style="
+        margin: 30px 30px;
+        height: 5px;
+        border: none;
+        background-color: #2c2c2cb5; /* Cinza azulado mais claro */
+      "
+    />
+    <section id="portfolio" class="main-section" data-aos="fade-left">
+      <h1>Portfólio</h1>
+      <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="carousel.moveSlide(-1)">
+          &#10094;
+        </button>
+        <div class="carousel-slides">
+          <!-- Projeto 1 -->
+          <div class="portfolio-card">
+            <img
+              src="https://raw.githubusercontent.com/victorhugo06/nlw/refs/heads/master/.github/preview.png"
+              alt="Projeto 1"
+            />
+            <h3>Página de Jogos</h3>
+            <p>Projeto front-end desenvolvido durante NLW - Rocketseat.</p>
+            <p class="tech-stack">Tecnologias: HTML, CSS, JavaScript</p>
+            <a
+              href="https://github.com/victorhugo06/nlw?tab=readme-ov-file"
+              class="project-link"
+              >Ver Projeto</a
+            >
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="portfolio-card">
+            <img
+              src="https://elking.com.br/wp-content/uploads/2023/07/cartas-21-no-baralho.png"
+              alt="Projeto 2"
+            />
+            <h3>Jogo do 21</h3>
+            <p>
+              Jogo permite ser jogado por dois players. Quem atingir 21 pontos
+              primeiro ou terminar a partida com a pontuação próxima a 21
+              pontos, vence. Se passar de 21 pontos, automaticamente o outro
+              jogador vence.
+            </p>
+            <p class="tech-stack">
+              Tecnologias: Vue.js, HTML, CSS, Bootstrap e JavaScript
+            </p>
+            <a
+              href="https://github.com/victorhugo06/jogo-21-vue"
+              class="project-link"
+              >Ver Projeto</a
+            >
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="portfolio-card">
+            <img
+              src="https://user-images.githubusercontent.com/49438011/93487108-54a75480-f8db-11ea-864b-f6b4e9b1fad4.png"
+              alt="Projeto 3"
+            />
+            <h3>Proffy</h3>
+            <p>
+              Site web para cadastro de professores particulares desenvolvido
+              durante a semana Next Level da Rocketseat.
+            </p>
+            <p class="tech-stack">
+              Tecnologias: HTML, CSS, JavaScript, Node.js, Express, npm, Sqlite
+            </p>
+            <a
+              href="https://github.com/victorhugo06/Proffy?tab=readme-ov-file"
+              class="project-link"
+              >Ver Projeto</a
+            >
+          </div>
+
+          <!-- Projeto 4 -->
+          <div class="portfolio-card">
+            <img
+              src="https://files.tecnoblog.net/wp-content/uploads/2020/01/pdf-icon.jpg"
+              alt="Projeto 4"
+            />
+            <h3>Sistema de faturas</h3>
+            <p>
+              O sistema é composto por duas fases: Sistema de leitura de
+              arquivos PDF em Python utilizando a biblioteca PyPDF2, o sistema
+              lê os arquivos e salva as informações específicas em um banco de
+              dados PostgreSQL. Segunda fase: O sistema web exibe as informações
+              das faturas e permite baixar e realizar operações de CRUD das
+              faturas.
+            </p>
+            <p class="tech-stack">
+              Tecnologias: Python, React, Node.js, Express.js, HTML, CSS e
+              JavaScript.
+            </p>
+            <a
+              href="https://github.com/victorhugo06/LeitorFaturas"
+              class="project-link"
+              >Ver Projeto</a
+            >
+          </div>
+        </div>
+        <button class="carousel-btn next" onclick="carousel.moveSlide(1)">
+          &#10095;
+        </button>
+        <div class="carousel-indicators"></div>
+      </div>
+    </section>
+    <hr
+      style="
+        margin: 30px 30px;
+        height: 5px;
+        border: none;
+        background-color: #2c2c2cb5; /* Cinza azulado mais claro */
+      "
+    />
+    <section id="tecnologias" class="main-section" data-aos="fade-right">
+      <h1>Tecnologias que Utilizo</h1>
+
+      <div class="tech-section">
+        <h2>Front-end</h2>
+        <div class="tech-icons">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML5"
+            title="HTML5"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS3"
+            title="CSS3"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+            title="JavaScript"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+            alt="jQuery"
+            title="jQuery"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            alt="Bootstrap"
+            title="Bootstrap"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React.js"
+            title="React.js"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+            alt="Vue.js"
+            title="Vue.js"
+          />
+        </div>
+      </div>
+
+      <div class="tech-section">
+        <h2>Back-end</h2>
+        <div class="tech-icons">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            alt="PHP"
+            title="PHP"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+            alt="Laravel"
+            title="Laravel"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            alt="Python"
+            title="Python"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt="Node.js"
+            title="Node.js"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            alt="Express"
+            title="Express"
+          />
+        </div>
+      </div>
+
+      <div class="tech-section">
+        <h2>Bancos de Dados</h2>
+        <div class="tech-icons">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            alt="MySQL"
+            title="MySQL"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+            alt="Oracle"
+            title="Oracle"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            alt="MongoDB"
+            title="MongoDB"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+            alt="SQL Server"
+            title="SQL Server"
+          />
+        </div>
+      </div>
+
+      <div class="tech-section">
+        <h2>APIs e Ferramentas</h2>
+        <div class="tech-icons">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+            alt="Docker"
+            title="Docker"
+          />
+          <img
+            src="https://raw.githubusercontent.com/detain/svg-logos/master/svg/api.svg"
+            alt="Postman"
+            title="Postman"
+          />
+          <img
+            src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/insomnia.svg"
+            alt="Insomnia"
+            title="Insomnia"
+          />
+        </div>
+        <p>Desenvolvimento e integração de APIs REST e SOAP</p>
+      </div>
+
+      <div class="tech-section">
+        <h2>Version Control</h2>
+        <div class="tech-icons">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            alt="Git"
+            title="Git"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            alt="GitHub"
+            title="GitHub"
+          />
+        </div>
+      </div>
+
+      <div class="tech-section">
+        <h2>Testing</h2>
+        <p>Unit testing (Jest e PhpUnit), TDD (Test-Driven Development)</p>
+      </div>
+
+      <div class="tech-section">
+        <h2>Architectures</h2>
+        <p>
+          MVC (Model-View-Controller), TDD (Test-Driven Development), DDD
+          (Domain-Driven Design)
+        </p>
+      </div>
+
+      <div class="tech-section">
+        <h2>Agile Methodologies</h2>
+        <p>Scrum e Kanban</p>
+      </div>
+
+      <div class="tech-section">
+        <h2>ORM</h2>
+        <p>Prisma</p>
+      </div>
+    </section>
+
+    <hr
+      style="
+        margin: 30px 30px;
+        height: 5px;
+        border: none;
+        background-color: #2c2c2cb5; /* Cinza azulado mais claro */
+      "
+    />
+    <section id="contato" class="main-section" data-aos="fade-left">
+      <h1>Contato</h1>
+      <p>
+        Sinta-se à vontade para entrar em contato comigo através dos seguintes
+        canais:
+      </p>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:victor_hugoferreira11@hotmail.com"
+            >victor_hugoferreira11@hotmail.com</a
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+5591983416895">+55 91 983416895</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/victor-serejo-3b17b614b/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/victorhugo06" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2025 Desenvolvido por Victor Serejo</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 1200, // Duração das animações
+      once: true, // Animação ocorre apenas uma vez
+      easing: 'ease-in-out' // Tipo de easing
+    })
+  })
+
+  class Carousel {
+    constructor() {
+      this.currentSlide = 0
+      this.slides = document.querySelectorAll(
+        '.carousel-slides .portfolio-card'
+      )
+      this.totalSlides = this.slides.length
+      this.slidesContainer = document.querySelector('.carousel-slides')
+      this.indicatorsContainer = document.querySelector('.carousel-indicators')
+
+      this.init()
+    }
+
+    init() {
+      this.setupIndicators()
+      this.updateIndicators()
+    }
+
+    moveSlide(direction) {
+      this.currentSlide =
+        (this.currentSlide + direction + this.totalSlides) % this.totalSlides
+      const offset = -this.currentSlide * 100
+      this.slidesContainer.style.transform = `translateX(${offset}%)`
+      this.updateIndicators()
+    }
+
+    setupIndicators() {
+      for (let i = 0; i < this.totalSlides; i++) {
+        const indicator = document.createElement('button')
+        indicator.addEventListener('click', () => this.goToSlide(i))
+        this.indicatorsContainer.appendChild(indicator)
+      }
+    }
+
+    updateIndicators() {
+      const indicators = this.indicatorsContainer.querySelectorAll('button')
+      indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === this.currentSlide)
+      })
+    }
+
+    goToSlide(index) {
+      this.currentSlide = index
+      const offset = -this.currentSlide * 100
+      this.slidesContainer.style.transform = `translateX(${offset}%)`
+      this.updateIndicators()
+    }
+  }
+
+  // Inicialize o carrossel após o DOM ser carregado
+  document.addEventListener('DOMContentLoaded', function () {
+    window.carousel = new Carousel()
+  })
+</script>
+
+<style>
+  /* Estilos Globais */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117; /* Cor de fundo mais escura */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-black-creative-technology-background-design-picture-image_963958.jpg');
+    background-size: cover;
+    background-attachment: scroll; /* A imagem rola junto com o conteúdo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Previne repetições da imagem */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.1); /* Ajuste na opacidade */
+  }
+
+  /* Navbar */
+  .main-nav {
+    background-color: black; /* Navbar mais escura */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .nav-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+  }
+  .nav-title:hover {
+    transition: color 0.3s ease;
+    color: #0cba1b;
+  }
+
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav ul li {
+    margin: 0 20px;
+  }
+
+  .main-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  .main-nav ul li a:hover {
+    color: #0cba1b; /* Cor mais clara no hover */
+  }
+
+  /* Seções */
+  .main-section {
+    padding: 120px 30px;
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transform: translateY(30px);
+    color: #a0aec0; /* Cor do texto mais clara */
+  }
+
+  .main-section.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .main-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+    color: #cbd5e0; /* Cor do título mais clara */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .main-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+
+  /* Seção "Quem Sou" */
+  #quem-sou {
+  }
+
+  .quem-sou-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .quem-sou-text {
+    flex: 1;
+  }
+
+  /* Seção "Portfólio" */
+  #portfolio {
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .portfolio-card {
+    background-color: #2c2c2cb5; /* Cinza azulado mais claro */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .portfolio-card h3 {
+    font-size: 1.5em;
+    margin: 15px;
+    color: #cbd5e0;
+  }
+
+  .portfolio-card p {
+    font-size: 1em;
+    margin: 0 15px 15px;
+    line-height: 1.6;
+  }
+
+  .portfolio-card .tech-stack {
+    font-style: italic;
+    color: #a0aec0;
+  }
+
+  .portfolio-card .project-link {
+    display: block;
+    padding: 10px 15px;
+    background-color: #0cba1b; /* Roxo mais claro */
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .portfolio-card .project-link:hover {
+    background-color: #0b9c17; /* Roxo mais escuro no hover */
+  }
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transição mais suave */
+  }
+
+  .portfolio-card {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center; /* Centraliza o conteúdo dos cards */
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+  }
+
+  .carousel-btn.prev {
+    left: 0;
+  }
+
+  .carousel-btn.next {
+    right: 0;
+  }
+
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Estilos para os indicadores */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .carousel-indicators button.active {
+    background-color: white;
+  }
+
+  /* Seção "Tecnologias" */
+  #tecnologias {
+  }
+
+  .tech-section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #2c2c2cb5; /* Cinza azulado mais claro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .tech-section h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #cbd5e0;
+  }
+
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .tech-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+    background-color: #a0aec0;
+    /* Fundo para melhor visualização das imagens */
+    padding: 5px;
+  }
+
+  .tech-icons img:hover {
+    transform: scale(1.2);
+  }
+
+  .tech-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  /* Seção "Contato" */
+  #contato {
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #2c2c2cb5; /* Cinza azulado mais claro */
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cbd5e0;
+  }
+
+  .contact-item i {
+    font-size: 1.5em;
+    color: #0cba1b;
+    width: 25px;
+  }
+
+  .contact-item a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-item a:hover {
+    color: #0cba1b;
+  }
+
+  /* Rodapé */
+  footer {
+    background-color: black; /* Navbar mais escura */
+    color: #cbd5e0;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-title {
+      margin-bottom: 10px;
+    }
+
+    .main-nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-nav ul li {
+      margin: 10px 0;
+    }
+
+    .main-section {
+      padding: 80px 20px;
+    }
+
+    .quem-sou-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+    }
+
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .tech-icons img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+</style>
