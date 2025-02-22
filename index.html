@@ -17,8 +17,13 @@
   <body>
     <nav class="main-nav">
       <div class="nav-container">
-        <div class="nav-title">Victor Serejo - Desenvolvedor Web</div>
-        <ul>
+        <label for="" class="nav-title">Victor Serejo - Dev</label>
+        <button class="nav-toggler" aria-label="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
           <li><a href="#quem-sou">Quem Sou</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
           <li><a href="#tecnologias">Tecnologias</a></li>
@@ -393,6 +398,16 @@
     })
   })
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const navToggler = document.querySelector('.nav-toggler')
+    const navLinks = document.querySelector('.nav-links')
+
+    navToggler.addEventListener('click', () => {
+      navLinks.classList.toggle('active')
+      navToggler.classList.toggle('active')
+    })
+  })
+
   class Carousel {
     constructor() {
       this.currentSlide = 0
@@ -470,14 +485,13 @@
 
   /* Navbar */
   .main-nav {
-    background-color: black; /* Navbar mais escura */
+    background-color: rgba(20, 25, 34, 0.9);
     padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
   }
 
   .nav-container {
@@ -492,12 +506,8 @@
     font-weight: bold;
     color: #fff;
   }
-  .nav-title:hover {
-    transition: color 0.3s ease;
-    color: #0cba1b;
-  }
 
-  .main-nav ul {
+  .nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -505,11 +515,11 @@
     padding: 0;
   }
 
-  .main-nav ul li {
+  .nav-links li {
     margin: 0 20px;
   }
 
-  .main-nav ul li a {
+  .nav-links li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
@@ -518,8 +528,26 @@
     border-radius: 5px;
   }
 
-  .main-nav ul li a:hover {
-    color: #0cba1b; /* Cor mais clara no hover */
+  .nav-links li a:hover {
+    color: #a0aec0;
+  }
+
+  /* Estilos para o menu hambúrguer */
+  .nav-toggler {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: none; /* Esconde por padrão */
+  }
+
+  .nav-toggler .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
   }
 
   /* Seções */
@@ -794,12 +822,50 @@
   /* Responsividade */
   @media (max-width: 768px) {
     .nav-container {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
 
     .nav-title {
       margin-bottom: 10px;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(20, 25, 34, 0.9);
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .nav-links li {
+      margin: 10px 0;
+    }
+
+    .nav-toggler {
+      display: block; /* Mostra o menu hambúrguer */
+    }
+
+    /* Estilos para o menu aberto */
+    .nav-links.active {
+      display: flex;
+    }
+
+    /* Animação do menu hambúrguer ao abrir */
+    .nav-toggler.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-toggler.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggler.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
     }
 
     .main-nav ul {
